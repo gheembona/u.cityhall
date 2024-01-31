@@ -8,3 +8,74 @@
 .util_tm li {float: none;display: flex;align-items: center;}
 .link_tm li a,
 .util_tm .tlang_box .lang_selc {line-height: normal;}
+.m_bgset01 {background-color: #daf9fc;}
+.ush-mainset-tit {font-family: 'GSK';font-size: 2.4rem;font-weight: 500;color: #121212;}
+
+.ush-mainset-02-mn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+
+.ush-mainset-02-mn-button-box {
+    width: calc(100% - 220px);
+    display: flex;
+    justify-content: space-between;
+}
+
+button.ush-mainset-02-mn-button {
+    width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 33px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+button.ush-mainset-02-mn-button > i {
+    width: 80px;
+    height: 55px;
+    background: #f0f0f0;
+}
+
+.ush-mainset-02-tab-wrap {
+    display: flex;
+}
+
+.ush-mainset-02-tab-list {
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    margin-right: 60px;
+}
+
+.ush-mainset-02-tab-box > ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+.ush-mainset-02-tab-box > ul > li {
+    width: calc(100% / 5);
+    line-height: 18px;
+    margin: 4px 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ush-mainset-02-tab-box > ul > li::before
+{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: #000;
+    margin-right: 5px;
+}
+.ush-mainset-02-tab-box {
+    width: calc(100% - 220px);
+    border: 2px solid #efeff1;
+    padding: 20px;
+}
