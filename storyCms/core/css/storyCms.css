@@ -1,0 +1,179 @@
+@charset "UTF-8"; 
+
+@import url(../../common/css/nsk.css);
+
+/**
+ * @file	: storyCms.css
+ * @author	: 신현호
+ * @brief	: 스토리 CMS 필수 기본 CSS
+ **/
+ 
+/********************************
+ color
+ *******************************/
+.scsfc_g_111 {color:#111 !important}
+.scsfc_g_121212 {color:#121212 !important}
+.scsfc_g_222 {color:#222 !important}
+.scsfc_g_333 {color:#333 !important}
+.scsfc_g_444 {color:#444 !important}
+.scsfc_g_555 {color:#555 !important}
+.scsfc_g_666 {color:#666 !important}
+
+.scsfc_r_01 {color:#d52604 !important}
+
+.scsfc_gn_01 {color:#0b717b !important}
+.scsfc_gn_02 {color:#1a7c82 !important}
+.scsfc_gn_03 {color:#00652b !important}
+
+.scsfc_bl_01 {color:#006cbd !important}
+.scsfc_bl_02 {color:#0a3b97 !important}
+.scsfc_bl_03 {color:#0a54a2 !important}
+
+.scs_ta_l {text-align:left !important}
+.scs_ta_c {text-align:center !important}
+.scs_ta_r {text-align:right !important}
+
+/********************************
+ 콘솔
+ *******************************/
+.scsPoint {position:relative; padding:0 0 0 22px; margin:0 0 8px;}
+.scsPoint:before {content:''; display:inline-block; position:absolute; left:0; top:3px; width:18px; height:18px; background-image:url(../../../storyCms/core/images/icon_sys_ir.png); background-repeat:no-repeat;}
+.scsPoint.pt_c_o {color:#d52604;}
+.scsPoint.pt_c_o:before {background-position:0 0;}
+.scsPoint.pt_c_g {color:#0b717b;}
+.scsPoint.pt_c_g:before {background-position:0 -19px;}
+.scsPoint.pt_c_b {color:#0a54a2;}
+.scsPoint.pt_c_b:before {background-position:0 -38px;}
+.scsPoint.pt_c_bk {color:#121212;}
+.scsPoint.pt_c_bk:before {background-position:0 -57px;}
+.scsPoint.pt_c_w {color:#fff;}
+.scsPoint.pt_c_w:before {background-position:0 -76px;}
+
+#sysConsole {margin-top:50px; border:1px solid #d5d5d5; clear:both;}
+#sysConsole * {box-sizing:border-box !important; font-size:15px !important; line-height:1.6 !important; font-style:normal; font-family:'NSK',맑은고딕,'Malgun Gothic',돋움,Dotum,sans-serif; word-break:break-all;}
+#sysConsole input, #sysConsoletextarea {}
+#sysConsole button {display:inline-block; text-align:center; vertical-align:baseline; line-height:1.6 !important;}
+#sysConsole button:-moz-focus-inner, #sysConsole input:-moz-focus-inner {border:0; padding:0}
+.sysConsole_box {position:relative; padding:10px 20px;background-color: #FFF;}
+.sysConsole_box .sysConsole_txt {position:relative; margin-bottom:0; padding-left:18px; display:inline-block;}
+.sysConsole_box .sysConsole_txt i {display:none !important;}
+.sysConsole_box .sysConsole_txt strong {display:inline-block; margin:0 5px; color:#333;}
+.sysConsole_box .sysConsole_txt span {display:inline-block; margin:0 5px;}
+.sysConsole_box .sysConsole_txt span .m_hidden {display:inline; margin:0;}
+.sysConsole_box .sysConsole_txt span em {color:#157883; letter-spacing:0;}
+.sysConsole_box .sysConsole_txt:before {content:''; display:inline-block; position:absolute; top:3px; left:0; width:18px; height:18px; background-image:url(../../../storyCms/core/images/icon_sys_ir.png); background-repeat:no-repeat;}
+.sysConsole_box .sysConsole_txt.icon01:before {background-position:-19px 0;}
+.sysConsole_box .sysConsole_txt.icon02:before {background-position:-19px -19px;}
+.sysConsole_box .sysConsole_txt.icon03:before {background-position:-19px -38px;}
+.sysConsole_box .sysConsole_txt.icon04:before {background-position:-19px -57px;}
+.sysConsole_box .sysConsole_txt.icon05:before {background-position:-19px -76px;}
+.sysConsole_box .sysConsole_txt.icon06:before {background-position:-19px -95px;}
+.sysConsole_box .sysConsole_txt.icon07:before {background-position:-19px -114px;}
+.sysConsole_box .sysConsole_txt.icon08:before {background-position:-19px -133px;}
+.sysConsole_box .sysConsole_txt.icon09:before {background-position:-19px -152px;}
+.sysConsole_box .sysConsole_txt.icon10:before {background-position:-38px 0;}
+.sysConsole_box .sysConsole_txt.icon11:before {background-position:-38px -19px;}
+.sysConsole_box .sysConsole_txt.icon12:before {background-position:-38px -38px;}
+.sysConsole_box .sysConsole_txt.icon13:before {background-position:-38px -57px;}
+.sysConsole_box .sysConsole_txt.icon14:before {background-position:-38px -76px;}
+.sysConsole_box .sysConsole_txt.icon15:before {background-position:-38px -95px;}
+.sysConsole_box .sysConsole_txt.icon16:before {background-position:-38px -114px;}
+
+.sysConsole_btnbox {padding:15px 20px; border-top:1px solid #e0e2e3; background-color:#fbfbfb;}
+.sysConsole_btnbox .sysConsole_btnfix {position:relative;}
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn {display:inline-block; margin:0 2px; padding:5px 20px; font-weight:500; color:#333; border:1px solid #ddd; border-radius:5px; background-color:#fff; box-shadow:2px 2px 2px rgba(0,0,0,0)}
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn.btn_b01 {color:#fff; border:none; background-color:#006cbd;}
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn.btn_g01 {color:#fff; border:none; background-color:#006f7a;}
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn.btn_r01 {color:#fff; border:none; background-color:#d52604;}
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn.btn_bk01 {color:#fff; border:none; background-color:#333;}
+
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn:hover,
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn:active,
+.sysConsole_btnbox .sysConsole_btnfix .scs_btn:focus {box-shadow:1px 2px 6px rgba(0,0,0,0.6); transition: box-shadow 0.1s linear; text-decoration:underline;}
+
+/* media query */
+@media screen and (max-width:1200px) {
+}
+@media screen and (max-width:1024px) {
+    #sysConsole {margin-top:40px;}
+}
+
+@media screen and (max-width:920px) {
+}
+
+@media screen and (max-width:767px) {
+    #sysConsole {margin-top:30px;}
+    #sysConsole * {font-size:14px !important;}
+	.sysConsole_box {padding-left:20px;}
+	.sysConsole_box .sysConsole_txt {display:block;}
+	.sysConsole_box .sysConsole_txt:before {top:2px;}
+	.sysConsole_box .sysConsole_txt.stf_r {margin-top:6px;}
+
+	.sysConsole_btnbox {padding-left:20px;}
+}
+
+@media screen and (max-width:640px) {
+    .sysConsole_box .sysConsole_txt span .m_hidden {display:none;}
+	.sysConsole_btnbox {padding:15px 20px;}
+}
+@media screen and (max-width:480px) {
+	.sysConsole_btnbox {padding:10px;}
+}
+
+/* 비밀번호찾기 : 공통*/
+.pwset_box {position:relative; padding:60px 20px 70px;}
+.pwset_box * {box-sizing:border-box;}
+.pwset_box:after {content:''; display:block; visibility:hidden; clear:both;}
+.pwset_box.addline_01 {border:1px solid #ddd;}
+.pwset_box.addline_02 {border:2px solid #ddd;}
+.pwset_box.addline_03 {border:3px solid #ddd;}
+
+.pwset_inner {text-align:center;}
+.pwset_inner .pw_txt {font-size:18px;}
+.pwset_inner ul {}
+.pwset_inner ul li {display:inline-block; vertical-align:bottom;}
+.pwset_inner .pwd_sfld {display:block; height:40px; border:1px solid #ddd;}
+.pwset_inner .pwd_sfld.wm_200 {max-width:200px;}
+.pwset_inner input {width:100%; height:38px; line-height:38px; border:none;}
+.pwset_inner button {margin:0; padding:0; min-width:60px; color:#fff; border:none; border-radius:5px;}
+.pwset_inner button span {display:block; height:40px; line-height:40px;}
+.pwset_inner button.com {background-color:#333;}
+.pwset_inner button.del {background-color:#d52604;}
+
+	/*media query*/
+@media screen and (max-width:1200px) {
+}
+
+@media screen and (max-width:1024px) {
+	
+}
+@media screen and (max-width:920px){
+
+}
+@media screen and (max-width:767px) {
+	.pwset_inner button {font-size:16px !important;}
+}
+
+@media screen and (max-width:640px) {
+}
+
+@media screen and (max-width:480px) {
+	.pwset_inner .pwd_inputbox {width:100%; margin-bottom:8px;}
+	.pwset_inner .pwd_sfld.wm_200 {width:99%; max-width:inherit;}
+	.pwset_inner button {min-width:100px;}
+
+}
+
+/*자동등록방지*/
+.CaptchArea { display: block; width: 100%; text-align: left;} 
+.CaptchaImageDiv {float:left; margin-right:15px; margin-bottom: 20px;}
+.CaptchaIconsDiv {width:auto;height: 42px;display: block;}
+.CaptchaIconsDiv .btn {position: relative;float: left;width: 170px;height: 42px;line-height: 18px;padding-left: 40px;vertical-align: middle;margin-left: 10px;text-align: left;border: 1px solid #b6b6b6;background-color:#fff;}
+.CaptchaIconsDiv .btn:first-child {margin-left: 0px;}
+.captchaCode {width: auto;height: 60px;padding: 6px;margin-bottom: 20px;line-height: 1.42857143;color: #555;background-color: #fff;background-image: none;border: 1px solid #ccc;border-radius: 0px;}
+
+.CaptchaIcon {display:block;position:absolute;left:10px;top:50%;margin-top: -12px;width:24px;height:24px;font-size:0;text-indent:-9999px;}
+.CaptchaIcon:before {content:'';display:inline-block;position:absolute;top:0;left:0;width:24px;height:24px;background-image:url("/s/storyCms/core/images/CaptchaIcon.png");background-repeat:no-repeat;}
+.CaptchaIcon.icon1:before {background-position: 4px 0;} /*문자열새로고침*/
+.CaptchaIcon.icon2:before {background-position: -56px 0px;} /*오디오 다시듣기*/
+.CaptchaIcon.icon3:before {background-position: -26px 0;} /*오디오 새로고침*/

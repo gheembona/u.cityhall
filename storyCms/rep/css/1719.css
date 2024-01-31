@@ -1,0 +1,66 @@
+@charset "UTF-8"; 
+
+#calamity-area {position:relative; z-index:10;}
+#calamity-area .disaster_box {}
+#calamity-area .disaster_area {background-color:#ffd62d;}
+#calamity-area .disaster_fix {position:relative; max-width:1240px; margin:0 auto; /*padding:20px 0;*/ padding:6px 0 0px;}
+#calamity-area .disaster_fix:after {content:''; display:block; visibility:hidden; clear:both;}
+
+#calamity-area .dst_set {float:left;}
+#calamity-area .dst_set.img_box {width:20%; padding-right:2%; text-align:center;}
+#calamity-area .dst_set.img_box span {display:table-cell; height:100%; vertical-align:middle;}
+#calamity-area .dst_set.txt_box {position:relative; width:80%;}
+
+#calamity-area .dst_set dl {color:#121212;}
+#calamity-area .dst_set dt {font-family:'GSK'; font-size:2.4rem; font-weight:700; line-height:1.4;}
+#calamity-area .dst_set dt a {color:#121212;}
+#calamity-area .dst_set dt strong {position:relative; display:inline-block; padding-right:34px; letter-spacing:-1px;}
+#calamity-area .dst_set dt strong:after {display:inline-block; content:''; position:absolute; right:0; top:5px; width:20px; height:20px; background:url(../images/main/disaster_ir.png) 0 0 no-repeat;}
+#calamity-area .dst_set dd {color:#333; display: none;}
+#calamity-area .dst_set dd .btn {display:inline-block; padding:4px 8px; color:#cb0e0e; border-radius:4px; border:2px solid #cb0e0e; background-color:#fff;}
+#calamity-area .dst_set dd .btn span {display:block;}
+
+#calamity-area .txt_set_l {/*padding-bottom:40px;*/}
+#calamity-area .dst_btn {position:absolute; right:0; /*bottom:20px;*/ bottom:5px;}
+#calamity-area .dst_btnafter {content:''; display:block; visibility:hidden; clear:both;}
+#calamity-area .dst_btn p {margin:0; padding:0;}
+#calamity-area .dst_btn button {display:inline-block; color:#fff; /*height:38px; line-height:38px;*/height:30px; line-height:30px; border:none; border-radius:4px;}
+#calamity-area .dst_btn button span {display:block; color:#fff; padding:0 10px;}
+#calamity-area .dst_btn button.todayclose {background-color:#003c86;}
+#calamity-area .dst_btn button.close {background-color:#b30909;}
+
+@media screen and (max-width:1024px) {
+	#calamity-area .dst_set dt {font-size:2.0rem;}
+	#calamity-area .dst_set dt strong:after {top:2px;}
+	#calamity-area .disaster_fix {/*padding:20px;*/ padding:10px;}
+	#calamity-area .dst_set.img_box {width:22%;}
+	#calamity-area .dst_set.txt_box {width:78%;}
+	
+	#calamity-area .dst_btn {right:15px; /*bottom:15px;*/bottom:10px;}
+	#calamity-area .dst_btn button {height:36px; line-height:36px;}
+}
+@media screen and (max-width:767px) {
+	#calamity-area .dst_btn button {height:30px; line-height:30px;}
+}
+@media screen and (max-width:640px) {
+	#calamity-area .dst_set.img_box {display:none;}
+	#calamity-area .dst_set.txt_box {width:inherit;}
+}
+@media screen and (max-width:480px) {
+}
+
+
+/*#calamity-area {display:block; padding:0px 0 10px 0; color:#222; background-color:#ffe05c; z-index:9999;}
+#calamity-area h3 {font-size:26px; font-weight:600; letter-spacing:-0.05em;}
+.txt {float:right;padding:0px 0 0px 30px; letter-spacing:-0.05em;}
+.pt20 {padding-top:20px;}
+.txt p {font-size:18px;}
+
+@media (max-width: 1199px){
+	.txt{float:right;padding:10px 0 0px 50px;}
+}
+@media (max-width: 992px){
+	.txt{float:right;padding:5px 15px;}
+	.pr20{padding-right:15px}
+}
+*/

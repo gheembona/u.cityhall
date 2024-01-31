@@ -1,0 +1,126 @@
+@charset "UTF-8"; 
+
+/*애니메이션*/
+/*1. 배경라인 : 3회전 
+	animation: spinspin 2s ease-out;
+*/
+@keyframes spinspin {
+	0% {transform: rotate(0deg);}
+	100% {transform:rotate(1080deg);}
+}
+
+@keyframes spinspin2 {
+	0% {transform: rotate(0deg);}
+	100% {transform:rotate(720deg);}
+}
+
+@keyframes spinspin3 {
+	0% {transform: rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+/*2.우측으로 이동후 원위치
+	animation:arr1 0.5s ease;
+*/
+@keyframes arr1 {
+     0% {transform:translateX(0)}
+    50% {transform:translateX(6px)}
+    100% {transform:translateX(0)}
+}
+@keyframes arr2 {
+     0% {transform:translateX(0)}
+    50% {transform:translateX(-6px)}
+    100% {transform:translateX(0)}
+}
+
+/*3.상단으로 이동후 원위치
+	animation:arr1 0.5s ease;
+*/
+@keyframes arr_t1 {
+     0% {transform:translateY(0)}
+    50% {transform:translateY(-6px)}
+    100% {transform:translateY(0)}
+}
+/*4.하단으로 이동후 원위치
+	animation:arr2 0.5s ease;
+*/
+@keyframes arr_t2 {
+     0% {transform:translateY(0)}
+    50% {transform:translateY(6px)}
+    100% {transform:translateY(0)}
+}
+
+/*3.아이콘 위아래
+	animation:tong .3s ease-in alternate infinite;
+*/
+@keyframes tong {
+	0% {transform:translate(0, -3px)}
+	100% {transform:translate(0, 2px)}
+}
+@keyframes tong2 {
+	0% {transform:translate(0, -3px)}
+	25% {transform:translate(0, 2px)}
+	50% {transform:translate(0, -3px)}
+	100% {transform:translate(0, 2px)}
+}
+@keyframes rotate{
+	0% {transform: rotate(0);}
+	100% {transform: rotate(180deg);}
+}
+
+/*4.아이콘 위
+	animation:ani_up .3s ease-in;
+*/
+@keyframes ani_up {
+	0% {transform:translate(0, 0)}
+	100% {transform:translate(0, -5px)}
+}
+
+.layout_list {}
+.layout_list:after {content:''; display:block; visibility:hidden; clear:both;}
+.layout_list li {position:relative; float:left; display:inline-block;}
+
+.layout_list.col_5 li {width:20%;}
+.layout_list.col_4 li {width:25%;}
+.layout_list.col_3 li {width:33.3333%}
+.layout_list.col_2 li {width:50%}
+
+/*박스라인 애니메이션*/
+.ani_linebox {position:relative; display:block; border:1px solid #ddd;}
+.ani_linebox:before, .ani_linebox:after {content: ''; display: inline-block; position: absolute;}
+.ani_linebox:before {right:-24px; top:-5px; width:0; height:0; border-right:35px solid transparent; border-left:35px solid transparent; border-bottom:35px solid #ddd; border-top:none; transform: rotate(45deg); transition:0.5s;}
+.ani_linebox:after {right:6px; top:6px; width:16px; height:16px; background:url(images/sub_ir.html) -39px -70px no-repeat; opacity:0.7; z-index: 10; transition: opacity 0.3s ease-in;}
+.ani_linebox .btn_icon {left:30px}
+.ani_linebox .line_top:before, .ani_linebox .line_top:after,
+.ani_linebox .line_btm:before, .ani_linebox .line_btm:after {content: ''; display:inline-block; position:absolute; width:100%; height:100%; background-color:#197bbf; transition:0.5s; z-index: 10;}
+.ani_linebox .line_top:before {left:0; top:0; width:0; height:2px;}
+.ani_linebox .line_top:after {left:0; top:0; width:2px; height:0;}
+.ani_linebox .line_btm:before {right:-1px; bottom:0; width:2px; height:0;}
+.ani_linebox .line_btm:after {right:0; bottom:-1px; width:0; height:2px;}
+.ani_linebox .innerbox {padding:30px 30px 30px 90px;}/*line_btm에 추가하여 사이즈 조정*/
+.ani_linebox:hover,
+.ani_linebox:active,
+.ani_linebox:focus {transform: translateY(-10px); box-shadow: 10px 10px 10px rgba(0,0,0,0.1);}
+.ani_linebox:hover:after,
+.ani_linebox:active:after,
+.ani_linebox:focus:after {opacity:1;}
+.ani_linebox:hover .line_top:before,
+.ani_linebox:active .line_top:before,
+.ani_linebox:focus .line_top:before,
+.ani_linebox:hover .line_btm:after,
+.ani_linebox:active .line_btm:after,
+.ani_linebox:focus .line_btm:after {width:100%;}
+.ani_linebox:hover .line_top:after,
+.ani_linebox:active .line_top:after,
+.ani_linebox:focus .line_top:after,
+.ani_linebox:hover .line_btm:before,
+.ani_linebox:active .line_btm:before,
+.ani_linebox:focus .line_btm:before {height:100%;}
+.ani_linebox:hover:before,
+.ani_linebox:active:before,
+.ani_linebox:focus:before {right:-23px; border-bottom: 35px solid #197bbf;}
+/*.ani_linebox:hover:after,
+.ani_linebox:active:after,
+.ani_linebox:focus:after {animation:rotate 1s ease alternate;}*/
+
+.ani_linebox .tit {display:block;}

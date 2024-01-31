@@ -1,0 +1,10 @@
+@charset "UTF-8"; 
+
+.lnb_inner {height: 34px;display: flex;justify-content: space-between;align-items: center;}
+.lnb_box {background-color: #e7e7e7;}
+.util_tm,
+.link_tm,
+.link_tm li, 
+.util_tm li {float: none;display: flex;align-items: center;}
+.link_tm li a,
+.util_tm .tlang_box .lang_selc {line-height: normal;}
